@@ -2,12 +2,6 @@
 wget is a command-line tool used to download files from the web using HTTP, HTTPS, or FTP.
 It is especially useful in CTFs, penetration testing, scripting, and servers without a GUI—because you can quietly pull files, payloads, web pages, and resources directly from a terminal.
 
-It also supports:
-
-recursive downloading
-resume broken downloads
-authentication
-proxy support
 
 # wget has many options:- 
 
@@ -101,24 +95,6 @@ Useful in CTF web challenges.
 
 9️. -U <agent> — Change User-Agent
 wget -U "Mozilla/5.0" http://example.com
-
-
-Spoofs your browser identity.
-
-Useful to:
-- bypass naive bot blocking
-- simulate browser access
-
-10. --no-check-certificate
-wget --no-check-certificate https://example.com/file
-
-Skips SSL certificate validation.
-
-Useful when:
-- site has invalid cert
-- lab environments
-
-Not recommended on real systems — security risk.
 
 
 
